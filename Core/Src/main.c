@@ -62,19 +62,19 @@ static void MX_USART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int Uart_start_msg(void)
+int uartStartMsg(void)
 {
     uint8_t start_msg[] = "Hello Paper !! \r\n" ;
     HAL_UART_Transmit(&huart1,start_msg,sizeof(start_msg),10);
     HAL_Delay(100);
 }
-int Gpio_init()
+int gpioInit()
 {
     HAL_GPIO_WritePin(AMP_SD_GPIO_Port, AMP_SD_Pin, GPIO_PIN_RESET); //AMP OFF
     HAL_GPIO_WritePin(BST_EN_GPIO_Port, BST_EN_Pin, GPIO_PIN_RESET); // BOOSTER OFF
     HAL_GPIO_WritePin(LED_CHG_GPIO_Port, LED_CHG_Pin, GPIO_PIN_RESET); // BOOSTER OFF
 }
-int Led_init()
+int ledInit()
 {
     //RED
     HAL_GPIO_WritePin(LED_R_GPIO_Port,LED_R_Pin, LED_ON);
@@ -114,7 +114,7 @@ int Led_init()
 
 
 }
-int PWM_init()
+int pwmInit()
 {
     HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_1);
 
@@ -152,10 +152,10 @@ int main(void)
   MX_TIM3_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  PWM_init();
-  Uart_start_msg();
-  Gpio_init();
-  Led_init();
+    pwmInit();
+    uartStartMsg();
+    gpioInit();
+    ledInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
