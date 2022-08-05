@@ -62,13 +62,14 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .bss.FAN_SW_Stat
-                0x0000000000000000        0x1 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+ .bss.huart1    0x0000000000000000       0x84 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
  .text.HAL_TIM_Base_MspDeInit
                 0x0000000000000000       0x20 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+ .text.HAL_UART_MspInit
+                0x0000000000000000       0x68 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
  .text.HAL_UART_MspDeInit
                 0x0000000000000000       0x30 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
@@ -133,6 +134,8 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
  .text.SystemCoreClockUpdate
                 0x0000000000000000       0x90 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .rodata.APBPrescTable
+                0x0000000000000000        0x8 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
  .text          0x0000000000000000       0x14 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
  .data          0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
@@ -638,6 +641,10 @@ Discarded input sections
                 0x0000000000000000       0x14 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
  .text.HAL_RCC_DisableCSS
                 0x0000000000000000       0x14 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetHCLKFreq
+                0x0000000000000000        0xc CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetPCLK1Freq
+                0x0000000000000000       0x20 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
  .text.HAL_RCC_GetOscConfig
                 0x0000000000000000       0xc4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
  .text.HAL_RCC_GetClockConfig
@@ -1048,9 +1055,21 @@ Discarded input sections
                 0x0000000000000000        0x8 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
  .text.HAL_UART_GetError
                 0x0000000000000000        0x6 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .text.UART_SetConfig
+                0x0000000000000000      0x158 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .text.UART_AdvFeatureConfig
+                0x0000000000000000       0xe0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .text.UART_WaitOnFlagUntilTimeout
+                0x0000000000000000       0xdc CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .text.HAL_UART_Transmit
+                0x0000000000000000      0x102 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
  .text.HAL_UART_Receive
                 0x0000000000000000      0x13c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .text.UART_CheckIdleState
+                0x0000000000000000       0x70 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
  .text.HAL_UART_Init
+                0x0000000000000000       0x6c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .text.HAL_HalfDuplex_Init
                 0x0000000000000000       0x6c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
  .text.HAL_MultiProcessor_Init
                 0x0000000000000000       0x98 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
@@ -1066,6 +1085,18 @@ Discarded input sections
                 0x0000000000000000       0xb0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
  .text.HAL_UART_Receive_DMA
                 0x0000000000000000       0x72 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .debug_info    0x0000000000000000     0x4f51 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .debug_abbrev  0x0000000000000000      0x30e CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .debug_loc     0x0000000000000000     0x395b CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .debug_aranges
+                0x0000000000000000      0x218 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .debug_ranges  0x0000000000000000      0x208 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .debug_line    0x0000000000000000     0x3bfa CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .debug_str     0x0000000000000000      0xfab CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .comment       0x0000000000000000       0x4d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .debug_frame   0x0000000000000000      0x624 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj
@@ -1217,7 +1248,7 @@ LOAD /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eab
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000c0                . = ALIGN (0x4)
 
-.text           0x00000000080000c0     0x1f9c
+.text           0x00000000080000c0     0x1a88
                 0x00000000080000c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080000c0       0x48 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
@@ -1231,315 +1262,292 @@ LOAD /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eab
  *(.text*)
  .text.MX_GPIO_Init
                 0x0000000008000220       0xf0 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .text.uartStartMsg
+ .text.pwmDutySet
                 0x0000000008000310       0x34 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x0000000008000310                uartStartMsg
+                0x0000000008000310                pwmDutySet
+ .text.ledControl
+                0x0000000008000344       0x34 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x0000000008000344                ledControl
+ .text.ledColor
+                0x0000000008000378       0x80 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x0000000008000378                ledColor
  .text.gpioInit
-                0x0000000008000344       0x2c CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x0000000008000344                gpioInit
- .text.ledInit  0x0000000008000370      0x114 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x0000000008000370                ledInit
- .text.pwmInit  0x0000000008000484       0x10 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x0000000008000484                pwmInit
+                0x00000000080003f8       0x2c CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x00000000080003f8                gpioInit
+ .text.ledInit  0x0000000008000424       0x68 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x0000000008000424                ledInit
+ .text.pwmInit  0x000000000800048c       0x10 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x000000000800048c                pwmInit
+ .text.fanControl
+                0x000000000800049c       0x84 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x000000000800049c                fanControl
+ .text.ampControl
+                0x0000000008000520       0x60 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x0000000008000520                ampControl
  .text.Error_Handler
-                0x0000000008000494        0x4 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x0000000008000494                Error_Handler
+                0x0000000008000580        0x4 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x0000000008000580                Error_Handler
  .text.MX_TIM3_Init
-                0x0000000008000498       0xb8 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .text.MX_USART1_UART_Init
-                0x0000000008000550       0x38 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x0000000008000584       0xb8 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
  .text.SystemClock_Config
-                0x0000000008000588       0x82 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x0000000008000588                SystemClock_Config
- *fill*         0x000000000800060a        0x2 
- .text.main     0x000000000800060c       0x68 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x000000000800060c                main
+                0x000000000800063c       0x84 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x000000000800063c                SystemClock_Config
+ .text.main     0x00000000080006c0       0x28 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x00000000080006c0                main
  .text.HAL_MspInit
-                0x0000000008000674       0x30 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
-                0x0000000008000674                HAL_MspInit
+                0x00000000080006e8       0x30 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+                0x00000000080006e8                HAL_MspInit
  .text.HAL_TIM_Base_MspInit
-                0x00000000080006a4       0x2c CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
-                0x00000000080006a4                HAL_TIM_Base_MspInit
+                0x0000000008000718       0x2c CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+                0x0000000008000718                HAL_TIM_Base_MspInit
  .text.HAL_TIM_MspPostInit
-                0x00000000080006d0       0x58 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
-                0x00000000080006d0                HAL_TIM_MspPostInit
- .text.HAL_UART_MspInit
-                0x0000000008000728       0x68 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
-                0x0000000008000728                HAL_UART_MspInit
+                0x0000000008000744       0x58 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+                0x0000000008000744                HAL_TIM_MspPostInit
  .text.NMI_Handler
-                0x0000000008000790        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
-                0x0000000008000790                NMI_Handler
+                0x000000000800079c        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+                0x000000000800079c                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008000792        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
-                0x0000000008000792                HardFault_Handler
+                0x000000000800079e        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+                0x000000000800079e                HardFault_Handler
  .text.SVC_Handler
-                0x0000000008000794        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
-                0x0000000008000794                SVC_Handler
+                0x00000000080007a0        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+                0x00000000080007a0                SVC_Handler
  .text.PendSV_Handler
-                0x0000000008000796        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
-                0x0000000008000796                PendSV_Handler
+                0x00000000080007a2        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+                0x00000000080007a2                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008000798        0x8 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
-                0x0000000008000798                SysTick_Handler
+                0x00000000080007a4        0x8 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+                0x00000000080007a4                SysTick_Handler
  .text.SystemInit
-                0x00000000080007a0        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
-                0x00000000080007a0                SystemInit
- *fill*         0x00000000080007a2        0x2 
+                0x00000000080007ac        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+                0x00000000080007ac                SystemInit
+ *fill*         0x00000000080007ae        0x2 
  .text.Reset_Handler
-                0x00000000080007a4       0x50 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
-                0x00000000080007a4                Reset_Handler
+                0x00000000080007b0       0x50 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
+                0x00000000080007b0                Reset_Handler
  .text.Default_Handler
-                0x00000000080007f4        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
-                0x00000000080007f4                TIM1_BRK_UP_TRG_COM_IRQHandler
-                0x00000000080007f4                I2C1_IRQHandler
-                0x00000000080007f4                SPI1_IRQHandler
-                0x00000000080007f4                EXTI2_3_IRQHandler
-                0x00000000080007f4                ADC1_IRQHandler
-                0x00000000080007f4                TIM17_IRQHandler
-                0x00000000080007f4                RTC_IRQHandler
-                0x00000000080007f4                TIM16_IRQHandler
-                0x00000000080007f4                TIM3_IRQHandler
-                0x00000000080007f4                EXTI4_15_IRQHandler
-                0x00000000080007f4                RCC_IRQHandler
-                0x00000000080007f4                DMA1_Channel1_IRQHandler
-                0x00000000080007f4                Default_Handler
-                0x00000000080007f4                TIM14_IRQHandler
-                0x00000000080007f4                DMA1_Channel4_5_IRQHandler
-                0x00000000080007f4                EXTI0_1_IRQHandler
-                0x00000000080007f4                WWDG_IRQHandler
-                0x00000000080007f4                DMA1_Channel2_3_IRQHandler
-                0x00000000080007f4                FLASH_IRQHandler
-                0x00000000080007f4                USART1_IRQHandler
-                0x00000000080007f4                TIM1_CC_IRQHandler
- *fill*         0x00000000080007f6        0x2 
+                0x0000000008000800        0x2 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
+                0x0000000008000800                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x0000000008000800                I2C1_IRQHandler
+                0x0000000008000800                SPI1_IRQHandler
+                0x0000000008000800                EXTI2_3_IRQHandler
+                0x0000000008000800                ADC1_IRQHandler
+                0x0000000008000800                TIM17_IRQHandler
+                0x0000000008000800                RTC_IRQHandler
+                0x0000000008000800                TIM16_IRQHandler
+                0x0000000008000800                TIM3_IRQHandler
+                0x0000000008000800                EXTI4_15_IRQHandler
+                0x0000000008000800                RCC_IRQHandler
+                0x0000000008000800                DMA1_Channel1_IRQHandler
+                0x0000000008000800                Default_Handler
+                0x0000000008000800                TIM14_IRQHandler
+                0x0000000008000800                DMA1_Channel4_5_IRQHandler
+                0x0000000008000800                EXTI0_1_IRQHandler
+                0x0000000008000800                WWDG_IRQHandler
+                0x0000000008000800                DMA1_Channel2_3_IRQHandler
+                0x0000000008000800                FLASH_IRQHandler
+                0x0000000008000800                USART1_IRQHandler
+                0x0000000008000800                TIM1_CC_IRQHandler
+ *fill*         0x0000000008000802        0x2 
  .text.HAL_InitTick
-                0x00000000080007f8       0x50 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
-                0x00000000080007f8                HAL_InitTick
+                0x0000000008000804       0x50 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+                0x0000000008000804                HAL_InitTick
  .text.HAL_Init
-                0x0000000008000848       0x20 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
-                0x0000000008000848                HAL_Init
+                0x0000000008000854       0x20 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+                0x0000000008000854                HAL_Init
  .text.HAL_IncTick
-                0x0000000008000868       0x18 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
-                0x0000000008000868                HAL_IncTick
+                0x0000000008000874       0x18 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+                0x0000000008000874                HAL_IncTick
  .text.HAL_GetTick
-                0x0000000008000880        0xc CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
-                0x0000000008000880                HAL_GetTick
+                0x000000000800088c        0xc CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+                0x000000000800088c                HAL_GetTick
  .text.HAL_Delay
-                0x000000000800088c       0x24 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
-                0x000000000800088c                HAL_Delay
+                0x0000000008000898       0x24 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+                0x0000000008000898                HAL_Delay
  .text.HAL_NVIC_SetPriority
-                0x00000000080008b0       0x60 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
-                0x00000000080008b0                HAL_NVIC_SetPriority
+                0x00000000080008bc       0x60 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+                0x00000000080008bc                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x0000000008000910       0x38 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
-                0x0000000008000910                HAL_SYSTICK_Config
+                0x000000000800091c       0x38 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+                0x000000000800091c                HAL_SYSTICK_Config
  .text.HAL_GPIO_Init
-                0x0000000008000948      0x18c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
-                0x0000000008000948                HAL_GPIO_Init
+                0x0000000008000954      0x18c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+                0x0000000008000954                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x0000000008000ad4        0xe CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
-                0x0000000008000ad4                HAL_GPIO_ReadPin
+                0x0000000008000ae0        0xe CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+                0x0000000008000ae0                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x0000000008000ae2        0xc CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
-                0x0000000008000ae2                HAL_GPIO_WritePin
- *fill*         0x0000000008000aee        0x2 
+                0x0000000008000aee        0xc CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+                0x0000000008000aee                HAL_GPIO_WritePin
+ *fill*         0x0000000008000afa        0x2 
  .text.HAL_RCC_OscConfig
-                0x0000000008000af0      0x49c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
-                0x0000000008000af0                HAL_RCC_OscConfig
+                0x0000000008000afc      0x49c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+                0x0000000008000afc                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0000000008000f8c       0x70 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
-                0x0000000008000f8c                HAL_RCC_GetSysClockFreq
+                0x0000000008000f98       0x70 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+                0x0000000008000f98                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x0000000008000ffc      0x134 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
-                0x0000000008000ffc                HAL_RCC_ClockConfig
- .text.HAL_RCC_GetHCLKFreq
-                0x0000000008001130        0xc CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
-                0x0000000008001130                HAL_RCC_GetHCLKFreq
- .text.HAL_RCC_GetPCLK1Freq
-                0x000000000800113c       0x20 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
-                0x000000000800113c                HAL_RCC_GetPCLK1Freq
+                0x0000000008001008      0x134 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+                0x0000000008001008                HAL_RCC_ClockConfig
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x000000000800115c      0x11c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
-                0x000000000800115c                HAL_RCCEx_PeriphCLKConfig
+                0x000000000800113c      0x11c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+                0x000000000800113c                HAL_RCCEx_PeriphCLKConfig
  .text.TIM_OC1_SetConfig
-                0x0000000008001278       0x78 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x0000000008001258       0x78 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
  .text.TIM_OC3_SetConfig
-                0x00000000080012f0       0x88 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x00000000080012d0       0x88 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x0000000008001378       0x68 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x0000000008001358       0x68 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
  .text.TIM_TI1_ConfigInputStage
-                0x00000000080013e0       0x22 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
- *fill*         0x0000000008001402        0x2 
+                0x00000000080013c0       0x22 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ *fill*         0x00000000080013e2        0x2 
  .text.TIM_TI2_ConfigInputStage
-                0x0000000008001404       0x28 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x00000000080013e4       0x28 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x000000000800142c       0x10 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x000000000800140c       0x10 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_MspInit
-                0x000000000800143c        0x2 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x000000000800143c                HAL_TIM_PWM_MspInit
- *fill*         0x000000000800143e        0x2 
+                0x000000000800141c        0x2 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x000000000800141c                HAL_TIM_PWM_MspInit
+ *fill*         0x000000000800141e        0x2 
  .text.TIM_Base_SetConfig
-                0x0000000008001440       0x84 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x0000000008001440                TIM_Base_SetConfig
+                0x0000000008001420       0x84 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x0000000008001420                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x00000000080014c4       0x58 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x00000000080014c4                HAL_TIM_Base_Init
+                0x00000000080014a4       0x58 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x00000000080014a4                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x000000000800151c       0x58 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x000000000800151c                HAL_TIM_PWM_Init
+                0x00000000080014fc       0x58 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x00000000080014fc                HAL_TIM_PWM_Init
  .text.TIM_OC2_SetConfig
-                0x0000000008001574       0x80 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x0000000008001574                TIM_OC2_SetConfig
+                0x0000000008001554       0x80 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x0000000008001554                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x00000000080015f4       0xf0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x00000000080015f4                HAL_TIM_PWM_ConfigChannel
+                0x00000000080015d4       0xf0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x00000000080015d4                HAL_TIM_PWM_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x00000000080016e4       0x18 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x00000000080016e4                TIM_ETR_SetConfig
+                0x00000000080016c4       0x18 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x00000000080016c4                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x00000000080016fc      0x108 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x00000000080016fc                HAL_TIM_ConfigClockSource
+                0x00000000080016dc      0x108 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x00000000080016dc                HAL_TIM_ConfigClockSource
  .text.TIM_CCxChannelCmd
-                0x0000000008001804       0x1a CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x0000000008001804                TIM_CCxChannelCmd
- *fill*         0x000000000800181e        0x2 
+                0x00000000080017e4       0x1a CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x00000000080017e4                TIM_CCxChannelCmd
+ *fill*         0x00000000080017fe        0x2 
  .text.HAL_TIM_PWM_Start
-                0x0000000008001820       0xe4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
-                0x0000000008001820                HAL_TIM_PWM_Start
+                0x0000000008001800       0xe4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+                0x0000000008001800                HAL_TIM_PWM_Start
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x0000000008001904       0x5c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
-                0x0000000008001904                HAL_TIMEx_MasterConfigSynchronization
- .text.UART_SetConfig
-                0x0000000008001960      0x158 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
-                0x0000000008001960                UART_SetConfig
- .text.UART_AdvFeatureConfig
-                0x0000000008001ab8       0xe0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
-                0x0000000008001ab8                UART_AdvFeatureConfig
- .text.UART_WaitOnFlagUntilTimeout
-                0x0000000008001b98       0xdc CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
-                0x0000000008001b98                UART_WaitOnFlagUntilTimeout
- .text.HAL_UART_Transmit
-                0x0000000008001c74      0x102 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
-                0x0000000008001c74                HAL_UART_Transmit
- *fill*         0x0000000008001d76        0x2 
- .text.UART_CheckIdleState
-                0x0000000008001d78       0x70 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
-                0x0000000008001d78                UART_CheckIdleState
- .text.HAL_HalfDuplex_Init
-                0x0000000008001de8       0x6c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
-                0x0000000008001de8                HAL_HalfDuplex_Init
+                0x00000000080018e4       0x5c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
+                0x00000000080018e4                HAL_TIMEx_MasterConfigSynchronization
  .text.__libc_init_array
-                0x0000000008001e54       0x44 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-init.o)
-                0x0000000008001e54                __libc_init_array
- .text.memset   0x0000000008001e98       0xa8 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-memset.o)
-                0x0000000008001e98                memset
+                0x0000000008001940       0x44 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-init.o)
+                0x0000000008001940                __libc_init_array
+ .text.memset   0x0000000008001984       0xa8 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-memset.o)
+                0x0000000008001984                memset
  .text.startup.register_fini
-                0x0000000008001f40       0x18 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x0000000008001f58       0x10 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atexit.o)
-                0x0000000008001f58                atexit
+                0x0000000008001a2c       0x18 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0000000008001a44       0x10 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atexit.o)
+                0x0000000008001a44                atexit
  .text.__libc_fini_array
-                0x0000000008001f68       0x28 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fini.o)
-                0x0000000008001f68                __libc_fini_array
+                0x0000000008001a54       0x28 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fini.o)
+                0x0000000008001a54                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x0000000008001f90        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
-                0x0000000008001f90                __retarget_lock_acquire_recursive
+                0x0000000008001a7c        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
+                0x0000000008001a7c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0000000008001f94        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
-                0x0000000008001f94                __retarget_lock_release_recursive
+                0x0000000008001a80        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
+                0x0000000008001a80                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x0000000008001f98       0xac /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__atexit.o)
-                0x0000000008001f98                __register_exitproc
+                0x0000000008001a84       0xac /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__atexit.o)
+                0x0000000008001a84                __register_exitproc
  *(.glue_7)
- .glue_7        0x0000000008002044        0x0 linker stubs
+ .glue_7        0x0000000008001b30        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008002044        0x0 linker stubs
+ .glue_7t       0x0000000008001b30        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008002044        0x0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+ .eh_frame      0x0000000008001b30        0x0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008002044        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000008002044                _init
- .init          0x0000000008002048        0x8 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+ .init          0x0000000008001b30        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008001b30                _init
+ .init          0x0000000008001b34        0x8 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
  *(.fini)
- .fini          0x0000000008002050        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000008002050                _fini
- .fini          0x0000000008002054        0x8 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
-                0x000000000800205c                . = ALIGN (0x4)
-                0x000000000800205c                _etext = .
+ .fini          0x0000000008001b3c        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008001b3c                _fini
+ .fini          0x0000000008001b40        0x8 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000008001b48                . = ALIGN (0x4)
+                0x0000000008001b48                _etext = .
 
-.vfp11_veneer   0x000000000800205c        0x0
- .vfp11_veneer  0x000000000800205c        0x0 linker stubs
+.vfp11_veneer   0x0000000008001b48        0x0
+ .vfp11_veneer  0x0000000008001b48        0x0 linker stubs
 
-.v4_bx          0x000000000800205c        0x0
- .v4_bx         0x000000000800205c        0x0 linker stubs
+.v4_bx          0x0000000008001b48        0x0
+ .v4_bx         0x0000000008001b48        0x0 linker stubs
 
-.iplt           0x000000000800205c        0x0
- .iplt          0x000000000800205c        0x0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000008001b48        0x0
+ .iplt          0x0000000008001b48        0x0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x000000000800205c       0x58
-                0x000000000800205c                . = ALIGN (0x4)
+.rodata         0x0000000008001b48       0x5c
+                0x0000000008001b48                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
- .rodata.uartStartMsg.str1.4
-                0x000000000800205c       0x12 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- *fill*         0x000000000800206e        0x2 
+ .rodata.ledColor
+                0x0000000008001b48       0x20 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
  .rodata.AHBPrescTable
-                0x0000000008002070       0x10 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
-                0x0000000008002070                AHBPrescTable
- .rodata.APBPrescTable
-                0x0000000008002080        0x8 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
-                0x0000000008002080                APBPrescTable
+                0x0000000008001b68       0x10 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+                0x0000000008001b68                AHBPrescTable
  .rodata.HAL_RCC_GetSysClockFreq.str1.4
-                0x0000000008002088       0x25 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
- *fill*         0x00000000080020ad        0x3 
+                0x0000000008001b78       0x25 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ *fill*         0x0000000008001b9d        0x3 
  .rodata._global_impure_ptr
-                0x00000000080020b0        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-impure.o)
-                0x00000000080020b0                _global_impure_ptr
-                0x00000000080020b4                . = ALIGN (0x4)
+                0x0000000008001ba0        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-impure.o)
+                0x0000000008001ba0                _global_impure_ptr
+                0x0000000008001ba4                . = ALIGN (0x4)
 
-.rel.dyn        0x00000000080020b4        0x0
- .rel.iplt      0x00000000080020b4        0x0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008001ba4        0x0
+ .rel.iplt      0x0000000008001ba4        0x0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.ARM.extab      0x00000000080020b4        0x0
-                0x00000000080020b4                . = ALIGN (0x4)
+.ARM.extab      0x0000000008001ba4        0x0
+                0x0000000008001ba4                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000000080020b4                . = ALIGN (0x4)
+                0x0000000008001ba4                . = ALIGN (0x4)
 
-.ARM            0x00000000080020b4        0x0
-                0x00000000080020b4                . = ALIGN (0x4)
-                0x00000000080020b4                __exidx_start = .
+.ARM            0x0000000008001ba4        0x0
+                0x0000000008001ba4                . = ALIGN (0x4)
+                0x0000000008001ba4                __exidx_start = .
  *(.ARM.exidx*)
-                0x00000000080020b4                __exidx_end = .
-                0x00000000080020b4                . = ALIGN (0x4)
+                0x0000000008001ba4                __exidx_end = .
+                0x0000000008001ba4                . = ALIGN (0x4)
 
-.preinit_array  0x00000000080020b4        0x0
-                0x00000000080020b4                . = ALIGN (0x4)
-                0x00000000080020b4                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008001ba4        0x0
+                0x0000000008001ba4                . = ALIGN (0x4)
+                0x0000000008001ba4                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x00000000080020b4                PROVIDE (__preinit_array_end = .)
-                0x00000000080020b4                . = ALIGN (0x4)
+                0x0000000008001ba4                PROVIDE (__preinit_array_end = .)
+                0x0000000008001ba4                . = ALIGN (0x4)
 
-.init_array     0x00000000080020b4        0x8
-                0x00000000080020b4                . = ALIGN (0x4)
-                0x00000000080020b4                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008001ba4        0x8
+                0x0000000008001ba4                . = ALIGN (0x4)
+                0x0000000008001ba4                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x00000000080020b4        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__call_atexit.o)
+                0x0000000008001ba4        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x00000000080020b8        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000080020bc                PROVIDE (__init_array_end = .)
-                0x00000000080020bc                . = ALIGN (0x4)
+ .init_array    0x0000000008001ba8        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000008001bac                PROVIDE (__init_array_end = .)
+                0x0000000008001bac                . = ALIGN (0x4)
 
-.fini_array     0x00000000080020bc        0x4
-                0x00000000080020bc                . = ALIGN (0x4)
-                0x00000000080020bc                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000008001bac        0x4
+                0x0000000008001bac                . = ALIGN (0x4)
+                0x0000000008001bac                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x00000000080020bc        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000080020c0                PROVIDE (__fini_array_end = .)
-                0x00000000080020c0                . = ALIGN (0x4)
-                0x00000000080020c0                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008001bac        0x4 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000008001bb0                PROVIDE (__fini_array_end = .)
+                0x0000000008001bb0                . = ALIGN (0x4)
+                0x0000000008001bb0                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x43c load address 0x00000000080020c0
+.data           0x0000000020000000      0x43c load address 0x0000000008001bb0
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -1565,52 +1573,54 @@ LOAD /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eab
                 0x000000002000043c                . = ALIGN (0x4)
                 0x000000002000043c                _edata = .
 
-.igot.plt       0x000000002000043c        0x0 load address 0x00000000080024fc
+.igot.plt       0x000000002000043c        0x0 load address 0x0000000008001fec
  .igot.plt      0x000000002000043c        0x0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
                 0x000000002000043c                . = ALIGN (0x4)
 
-.bss            0x000000002000043c      0x114 load address 0x00000000080024fc
+.bss            0x000000002000043c       0x90 load address 0x0000000008001fec
                 0x000000002000043c                _sbss = .
                 0x000000002000043c                __bss_start__ = _sbss
  *(.bss)
  .bss           0x000000002000043c       0x1c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.bss*)
- .bss.AMP_SW_Stat
+ .bss.ampModeCount
                 0x0000000020000458        0x1 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x0000000020000458                AMP_SW_Stat
- *fill*         0x0000000020000459        0x3 
+                0x0000000020000458                ampModeCount
+ .bss.fanModeCount
+                0x0000000020000459        0x1 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                0x0000000020000459                fanModeCount
+ *fill*         0x000000002000045a        0x2 
  .bss.htim3     0x000000002000045c       0x48 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
                 0x000000002000045c                htim3
- .bss.huart1    0x00000000200004a4       0x84 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                0x00000000200004a4                huart1
- .bss.uwTick    0x0000000020000528        0x4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
-                0x0000000020000528                uwTick
+ .bss.uwTick    0x00000000200004a4        0x4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+                0x00000000200004a4                uwTick
  *(COMMON)
- COMMON         0x000000002000052c       0x21 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
-                0x000000002000052c                __lock___atexit_recursive_mutex
-                0x0000000020000530                __lock___arc4random_mutex
-                0x0000000020000534                __lock___env_recursive_mutex
-                0x0000000020000538                __lock___sinit_recursive_mutex
-                0x000000002000053c                __lock___malloc_recursive_mutex
-                0x0000000020000540                __lock___at_quick_exit_mutex
-                0x0000000020000544                __lock___dd_hash_mutex
-                0x0000000020000548                __lock___tz_mutex
-                0x000000002000054c                __lock___sfp_recursive_mutex
-                0x0000000020000550                . = ALIGN (0x4)
- *fill*         0x000000002000054d        0x3 
-                0x0000000020000550                _ebss = .
-                0x0000000020000550                __bss_end__ = _ebss
+ COMMON         0x00000000200004a8       0x21 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
+                0x00000000200004a8                __lock___atexit_recursive_mutex
+                0x00000000200004ac                __lock___arc4random_mutex
+                0x00000000200004b0                __lock___env_recursive_mutex
+                0x00000000200004b4                __lock___sinit_recursive_mutex
+                0x00000000200004b8                __lock___malloc_recursive_mutex
+                0x00000000200004bc                __lock___at_quick_exit_mutex
+                0x00000000200004c0                __lock___dd_hash_mutex
+                0x00000000200004c4                __lock___tz_mutex
+                0x00000000200004c8                __lock___sfp_recursive_mutex
+                0x00000000200004cc                . = ALIGN (0x4)
+ *fill*         0x00000000200004c9        0x3 
+                0x00000000200004cc                _ebss = .
+                0x00000000200004cc                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000550      0x600 load address 0x00000000080024fc
-                0x0000000020000550                . = ALIGN (0x8)
+                0x00000000200004cc      0x604 load address 0x0000000008001fec
+                0x00000000200004d0                . = ALIGN (0x8)
+ *fill*         0x00000000200004cc        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x0000000020000550                PROVIDE (_end = .)
-                0x0000000020000750                . = (. + _Min_Heap_Size)
- *fill*         0x0000000020000550      0x200 
-                0x0000000020000b50                . = (. + _Min_Stack_Size)
- *fill*         0x0000000020000750      0x400 
-                0x0000000020000b50                . = ALIGN (0x8)
+                0x00000000200004d0                PROVIDE (_end = .)
+                0x00000000200006d0                . = (. + _Min_Heap_Size)
+ *fill*         0x00000000200004d0      0x200 
+                0x0000000020000ad0                . = (. + _Min_Stack_Size)
+ *fill*         0x00000000200006d0      0x400 
+                0x0000000020000ad0                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -1649,150 +1659,152 @@ LOAD /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eab
  .ARM.attributes
                 0x0000000000000223       0x2c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
  .ARM.attributes
-                0x000000000000024f       0x2c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+                0x000000000000024f       0x1e /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x000000000000027b       0x1e /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x000000000000026d       0x1e /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x0000000000000299       0x1e /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x000000000000028b       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000000000002b7       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-impure.o)
+                0x00000000000002b7       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-init.o)
  .ARM.attributes
-                0x00000000000002e3       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-init.o)
+                0x00000000000002e3       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-memset.o)
  .ARM.attributes
-                0x000000000000030f       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-memset.o)
+                0x000000000000030f       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x000000000000033b       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__call_atexit.o)
+                0x000000000000033b       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atexit.o)
  .ARM.attributes
-                0x0000000000000367       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atexit.o)
+                0x0000000000000367       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fini.o)
  .ARM.attributes
-                0x0000000000000393       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fini.o)
+                0x0000000000000393       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
  .ARM.attributes
-                0x00000000000003bf       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
+                0x00000000000003bf       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__atexit.o)
  .ARM.attributes
-                0x00000000000003eb       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__atexit.o)
- .ARM.attributes
-                0x0000000000000417       0x1e /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+                0x00000000000003eb       0x1e /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
 OUTPUT(Mask_SW.elf elf32-littlearm)
 LOAD linker stubs
 LOAD /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
 LOAD /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 LOAD /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a
 
-.debug_info     0x0000000000000000     0xfa6f
- .debug_info    0x0000000000000000     0x1915 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .debug_info    0x0000000000001915      0xe52 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
- .debug_info    0x0000000000002767      0x1ca CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
- .debug_info    0x0000000000002931      0x2d3 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
- .debug_info    0x0000000000002c04       0x22 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
- .debug_info    0x0000000000002c26      0x75d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
- .debug_info    0x0000000000003383      0x8e1 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
- .debug_info    0x0000000000003c64      0x70f CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
- .debug_info    0x0000000000004373      0xa9c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
- .debug_info    0x0000000000004e0f      0x489 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
- .debug_info    0x0000000000005298     0x3d97 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
- .debug_info    0x000000000000902f     0x1aef CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
- .debug_info    0x000000000000ab1e     0x4f51 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+.debug_info     0x0000000000000000     0xac0d
+ .debug_info    0x0000000000000000     0x1a04 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x0000000000001a04      0xe52 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+ .debug_info    0x0000000000002856      0x1ca CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+ .debug_info    0x0000000000002a20      0x2d3 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .debug_info    0x0000000000002cf3       0x22 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
+ .debug_info    0x0000000000002d15      0x75d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+ .debug_info    0x0000000000003472      0x8e1 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+ .debug_info    0x0000000000003d53      0x70f CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+ .debug_info    0x0000000000004462      0xa9c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .debug_info    0x0000000000004efe      0x489 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+ .debug_info    0x0000000000005387     0x3d97 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ .debug_info    0x000000000000911e     0x1aef CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
 
-.debug_abbrev   0x0000000000000000     0x1a9f
- .debug_abbrev  0x0000000000000000      0x2c3 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00000000000002c3      0x1fe CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
- .debug_abbrev  0x00000000000004c1       0xef CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
- .debug_abbrev  0x00000000000005b0      0x148 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
- .debug_abbrev  0x00000000000006f8       0x12 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
- .debug_abbrev  0x000000000000070a      0x268 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
- .debug_abbrev  0x0000000000000972      0x2b9 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
- .debug_abbrev  0x0000000000000c2b      0x213 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
- .debug_abbrev  0x0000000000000e3e      0x271 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
- .debug_abbrev  0x00000000000010af      0x1e7 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x0000000000001296      0x27c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
- .debug_abbrev  0x0000000000001512      0x27f CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
- .debug_abbrev  0x0000000000001791      0x30e CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+.debug_abbrev   0x0000000000000000     0x178f
+ .debug_abbrev  0x0000000000000000      0x2c1 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00000000000002c1      0x1fe CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+ .debug_abbrev  0x00000000000004bf       0xef CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+ .debug_abbrev  0x00000000000005ae      0x148 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .debug_abbrev  0x00000000000006f6       0x12 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
+ .debug_abbrev  0x0000000000000708      0x268 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+ .debug_abbrev  0x0000000000000970      0x2b9 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+ .debug_abbrev  0x0000000000000c29      0x213 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+ .debug_abbrev  0x0000000000000e3c      0x271 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .debug_abbrev  0x00000000000010ad      0x1e7 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x0000000000001294      0x27c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ .debug_abbrev  0x0000000000001510      0x27f CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
 
-.debug_aranges  0x0000000000000000      0xae0
- .debug_aranges
-                0x0000000000000000       0x68 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .debug_aranges
-                0x0000000000000068       0x48 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
- .debug_aranges
-                0x00000000000000b0       0x40 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
- .debug_aranges
-                0x00000000000000f0       0x28 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
- .debug_aranges
-                0x0000000000000118       0x28 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
- .debug_aranges
-                0x0000000000000140       0xd0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
- .debug_aranges
-                0x0000000000000210       0x78 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
- .debug_aranges
-                0x0000000000000288       0x58 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
- .debug_aranges
-                0x00000000000002e0       0x80 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
- .debug_aranges
-                0x0000000000000360       0x30 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
- .debug_aranges
-                0x0000000000000390      0x3d0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
- .debug_aranges
-                0x0000000000000760      0x168 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
- .debug_aranges
-                0x00000000000008c8      0x218 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+.debug_loc      0x0000000000000000     0x8e02
+ .debug_loc     0x0000000000000000      0x110 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+ .debug_loc     0x0000000000000110       0xc0 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+ .debug_loc     0x00000000000001d0      0x167 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .debug_loc     0x0000000000000337      0x141 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+ .debug_loc     0x0000000000000478      0x433 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+ .debug_loc     0x00000000000008ab      0x388 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+ .debug_loc     0x0000000000000c33      0x607 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .debug_loc     0x000000000000123a      0x397 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+ .debug_loc     0x00000000000015d1     0x55e6 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ .debug_loc     0x0000000000006bb7     0x224b CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
 
-.debug_ranges   0x0000000000000000      0xaa8
- .debug_ranges  0x0000000000000000       0x58 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .debug_ranges  0x0000000000000058       0x38 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
- .debug_ranges  0x0000000000000090       0x30 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
- .debug_ranges  0x00000000000000c0       0x18 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
- .debug_ranges  0x00000000000000d8       0x20 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
- .debug_ranges  0x00000000000000f8       0xc0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
- .debug_ranges  0x00000000000001b8       0xc8 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
- .debug_ranges  0x0000000000000280       0x48 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
- .debug_ranges  0x00000000000002c8       0x88 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
- .debug_ranges  0x0000000000000350       0x38 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
- .debug_ranges  0x0000000000000388      0x3c0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
- .debug_ranges  0x0000000000000748      0x158 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
- .debug_ranges  0x00000000000008a0      0x208 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+.debug_aranges  0x0000000000000000      0x8e0
+ .debug_aranges
+                0x0000000000000000       0x80 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+ .debug_aranges
+                0x0000000000000080       0x48 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+ .debug_aranges
+                0x00000000000000c8       0x40 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+ .debug_aranges
+                0x0000000000000108       0x28 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .debug_aranges
+                0x0000000000000130       0x28 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
+ .debug_aranges
+                0x0000000000000158       0xd0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+ .debug_aranges
+                0x0000000000000228       0x78 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+ .debug_aranges
+                0x00000000000002a0       0x58 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+ .debug_aranges
+                0x00000000000002f8       0x80 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .debug_aranges
+                0x0000000000000378       0x30 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+ .debug_aranges
+                0x00000000000003a8      0x3d0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ .debug_aranges
+                0x0000000000000778      0x168 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
 
-.debug_line     0x0000000000000000     0xdbf9
- .debug_line    0x0000000000000000      0x7eb CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .debug_line    0x00000000000007eb      0x46f CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
- .debug_line    0x0000000000000c5a      0x2db CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
- .debug_line    0x0000000000000f35      0x32d CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
- .debug_line    0x0000000000001262       0xd5 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
- .debug_line    0x0000000000001337      0x62a CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
- .debug_line    0x0000000000001961      0x680 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
- .debug_line    0x0000000000001fe1      0x75d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
- .debug_line    0x000000000000273e      0xc38 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
- .debug_line    0x0000000000003376      0x576 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
- .debug_line    0x00000000000038ec     0x4a96 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
- .debug_line    0x0000000000008382     0x1c7d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
- .debug_line    0x0000000000009fff     0x3bfa CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+.debug_ranges   0x0000000000000000      0x8b8
+ .debug_ranges  0x0000000000000000       0x70 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+ .debug_ranges  0x0000000000000070       0x38 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+ .debug_ranges  0x00000000000000a8       0x30 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+ .debug_ranges  0x00000000000000d8       0x18 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .debug_ranges  0x00000000000000f0       0x20 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
+ .debug_ranges  0x0000000000000110       0xc0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+ .debug_ranges  0x00000000000001d0       0xc8 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+ .debug_ranges  0x0000000000000298       0x48 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+ .debug_ranges  0x00000000000002e0       0x88 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .debug_ranges  0x0000000000000368       0x38 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+ .debug_ranges  0x00000000000003a0      0x3c0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ .debug_ranges  0x0000000000000760      0x158 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
 
-.debug_str      0x0000000000000000     0x37ce
- .debug_str     0x0000000000000000      0xea3 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
-                                        0xf82 (size before relaxing)
- .debug_str     0x0000000000000ea3       0xed CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+.debug_line     0x0000000000000000     0xa115
+ .debug_line    0x0000000000000000      0x901 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x0000000000000901      0x46f CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+ .debug_line    0x0000000000000d70      0x2db CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+ .debug_line    0x000000000000104b      0x32d CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .debug_line    0x0000000000001378       0xd5 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
+ .debug_line    0x000000000000144d      0x62a CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+ .debug_line    0x0000000000001a77      0x680 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+ .debug_line    0x00000000000020f7      0x75d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+ .debug_line    0x0000000000002854      0xc38 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .debug_line    0x000000000000348c      0x576 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+ .debug_line    0x0000000000003a02     0x4a96 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ .debug_line    0x0000000000008498     0x1c7d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
+
+.debug_str      0x0000000000000000     0x30d0
+ .debug_str     0x0000000000000000      0xf3e CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+                                       0x1018 (size before relaxing)
+ .debug_str     0x0000000000000f3e       0xed CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
                                         0xb4e (size before relaxing)
- .debug_str     0x0000000000000f90       0xbc CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+ .debug_str     0x000000000000102b       0xbc CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
                                         0x344 (size before relaxing)
- .debug_str     0x000000000000104c       0xab CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .debug_str     0x00000000000010e7       0xab CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
                                         0x386 (size before relaxing)
- .debug_str     0x00000000000010f7       0x82 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
+ .debug_str     0x0000000000001192       0x82 CMakeFiles/Mask_SW.elf.dir/Core/Startup/startup_stm32f030f4px.s.obj
                                          0xe3 (size before relaxing)
- .debug_str     0x0000000000001179      0x3e4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+ .debug_str     0x0000000000001214      0x3e4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
                                         0x727 (size before relaxing)
- .debug_str     0x000000000000155d      0x2cd CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+ .debug_str     0x00000000000015f8      0x2cd CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
                                         0x711 (size before relaxing)
- .debug_str     0x000000000000182a      0x14c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+ .debug_str     0x00000000000018c5      0x151 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
                                         0x555 (size before relaxing)
- .debug_str     0x0000000000001976      0x222 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .debug_str     0x0000000000001a16      0x222 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
                                         0x75f (size before relaxing)
- .debug_str     0x0000000000001b98       0xe3 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+ .debug_str     0x0000000000001c38       0xe3 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
                                         0x4fb (size before relaxing)
- .debug_str     0x0000000000001c7b      0xe45 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ .debug_str     0x0000000000001d1b      0xe45 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
                                        0x1794 (size before relaxing)
- .debug_str     0x0000000000002ac0      0x570 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
+ .debug_str     0x0000000000002b60      0x570 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
                                         0xf95 (size before relaxing)
- .debug_str     0x0000000000003030      0x79e CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
-                                        0xfab (size before relaxing)
 
 .comment        0x0000000000000000       0x4c
  .comment       0x0000000000000000       0x4c CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
@@ -1807,38 +1819,24 @@ LOAD /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eab
  .comment       0x000000000000004c       0x4d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
  .comment       0x000000000000004c       0x4d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
  .comment       0x000000000000004c       0x4d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
- .comment       0x000000000000004c       0x4d CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
 
-.debug_frame    0x0000000000000000     0x1e58
- .debug_frame   0x0000000000000000      0x118 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x0000000000000118       0x98 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
- .debug_frame   0x00000000000001b0       0x68 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
- .debug_frame   0x0000000000000218       0x38 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
- .debug_frame   0x0000000000000250      0x1ac CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
- .debug_frame   0x00000000000003fc       0xe4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
- .debug_frame   0x00000000000004e0       0xc0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
- .debug_frame   0x00000000000005a0      0x13c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
- .debug_frame   0x00000000000006dc       0x58 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
- .debug_frame   0x0000000000000734      0xad0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
- .debug_frame   0x0000000000001204      0x420 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
- .debug_frame   0x0000000000001624      0x624 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
- .debug_frame   0x0000000000001c48       0x20 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_frame   0x0000000000001c68       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-init.o)
- .debug_frame   0x0000000000001c94       0x30 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-memset.o)
- .debug_frame   0x0000000000001cc4       0x54 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x0000000000001d18       0x28 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atexit.o)
- .debug_frame   0x0000000000001d40       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fini.o)
- .debug_frame   0x0000000000001d6c       0xb0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
- .debug_frame   0x0000000000001e1c       0x3c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__atexit.o)
-
-.debug_loc      0x0000000000000000     0xc64d
- .debug_loc     0x0000000000000000       0xc0 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
- .debug_loc     0x00000000000000c0      0x167 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
- .debug_loc     0x0000000000000227      0x141 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
- .debug_loc     0x0000000000000368      0x433 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
- .debug_loc     0x000000000000079b      0x388 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
- .debug_loc     0x0000000000000b23      0x607 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
- .debug_loc     0x000000000000112a      0x397 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
- .debug_loc     0x00000000000014c1     0x55e6 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
- .debug_loc     0x0000000000006aa7     0x224b CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
- .debug_loc     0x0000000000008cf2     0x395b CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
+.debug_frame    0x0000000000000000     0x186c
+ .debug_frame   0x0000000000000000      0x150 CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x0000000000000150       0x98 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj
+ .debug_frame   0x00000000000001e8       0x68 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj
+ .debug_frame   0x0000000000000250       0x38 CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj
+ .debug_frame   0x0000000000000288      0x1ac CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
+ .debug_frame   0x0000000000000434       0xe4 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj
+ .debug_frame   0x0000000000000518       0xc0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj
+ .debug_frame   0x00000000000005d8      0x13c CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
+ .debug_frame   0x0000000000000714       0x58 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
+ .debug_frame   0x000000000000076c      0xad0 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
+ .debug_frame   0x000000000000123c      0x420 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
+ .debug_frame   0x000000000000165c       0x20 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x000000000000167c       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-init.o)
+ .debug_frame   0x00000000000016a8       0x30 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-memset.o)
+ .debug_frame   0x00000000000016d8       0x54 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x000000000000172c       0x28 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000001754       0x2c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fini.o)
+ .debug_frame   0x0000000000001780       0xb0 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lock.o)
+ .debug_frame   0x0000000000001830       0x3c /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-__atexit.o)

@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW -B /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug
 -- The C compiler identification is GNU 9.3.1
 -- The CXX compiler identification is GNU 9.3.1
 -- The ASM compiler identification is GNU

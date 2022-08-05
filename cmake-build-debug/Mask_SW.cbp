@@ -17,26 +17,6 @@
 					<DistClean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Mask_SW.elf">
 				<Option output="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Mask_SW.elf" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug"/>
@@ -90,6 +70,26 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 Mask_SW.elf/fast"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/opt/homebrew/bin/gmake -j10 -f &quot;/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -265,6 +265,42 @@
 			<Option target="Mask_SW.elf"/>
 		</Unit>
 		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_cortex.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_crs.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dma.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_exti.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_pwr.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_usart.h">
+			<Option target="Mask_SW.elf"/>
+		</Unit>
+		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_utils.h">
 			<Option target="Mask_SW.elf"/>
 		</Unit>
 		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/License.md">
