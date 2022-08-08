@@ -37,9 +37,7 @@ CMakeFiles/Mask_SW.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj: ../Core/Src/stm32f0xx_hal_msp.c \
   ../Core/Inc/main.h \
@@ -77,9 +75,7 @@ CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_hal_msp.c.obj: ../Core/Src/stm32f0
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj: ../Core/Src/stm32f0xx_it.c \
   ../Core/Inc/main.h \
@@ -118,8 +114,6 @@ CMakeFiles/Mask_SW.elf.dir/Core/Src/stm32f0xx_it.c.obj: ../Core/Src/stm32f0xx_it
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
   ../Core/Inc/stm32f0xx_it.h
 
 CMakeFiles/Mask_SW.elf.dir/Core/Src/syscalls.c.obj: ../Core/Src/syscalls.c \
@@ -222,9 +216,7 @@ CMakeFiles/Mask_SW.elf.dir/Core/Src/system_stm32f0xx.c.obj: ../Core/Src/system_s
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -261,9 +253,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj:
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -300,9 +290,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -339,9 +327,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -378,9 +364,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -417,9 +401,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -456,9 +438,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -495,9 +475,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -534,9 +512,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -573,9 +549,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -612,9 +586,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -651,9 +623,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -690,9 +660,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -729,9 +697,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -768,9 +734,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
 CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
@@ -807,100 +771,12 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
   ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
-CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
-  ../Core/Inc/stm32f0xx_hal_conf.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h \
-  ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h \
-  ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x6.h \
-  ../Drivers/CMSIS/Include/core_cm0.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stdint.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/stdint.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/_default_types.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/features.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/_newlib_version.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_intsup.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_stdint.h \
-  ../Drivers/CMSIS/Include/cmsis_version.h \
-  ../Drivers/CMSIS/Include/cmsis_compiler.h \
-  ../Drivers/CMSIS/Include/cmsis_gcc.h \
-  ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stddef.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_exti.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
-
-CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj: ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
-  ../Core/Inc/stm32f0xx_hal_conf.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h \
-  ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h \
-  ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x6.h \
-  ../Drivers/CMSIS/Include/core_cm0.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stdint.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/stdint.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/_default_types.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/features.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/_newlib_version.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_intsup.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_stdint.h \
-  ../Drivers/CMSIS/Include/cmsis_version.h \
-  ../Drivers/CMSIS/Include/cmsis_compiler.h \
-  ../Drivers/CMSIS/Include/cmsis_gcc.h \
-  ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stddef.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_exti.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
-  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
-
-
-../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c:
-
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_intsup.h:
 
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c:
 
-../Core/Inc/stm32f0xx_it.h:
-
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c:
-
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/stdio.h:
 
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c:
 
@@ -912,15 +788,9 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c:
 
-../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h:
-
 ../Core/Src/system_stm32f0xx.c:
 
-../Core/Src/main.c:
-
 ../Core/Src/sysmem.c:
-
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stdarg.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/_time.h:
 
@@ -930,7 +800,7 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/signal.h:
 
-../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h:
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stdarg.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/errno.h:
 
@@ -940,17 +810,11 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_locale.h:
 
-../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
-
-../Core/Inc/stm32f0xx_hal_conf.h:
-
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/types.h:
-
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/stdio.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/sched.h:
 
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/cdefs.h:
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/stdio.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_sigset.h:
 
@@ -962,23 +826,25 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/types.h:
 
-../Core/Src/stm32f0xx_hal_msp.c:
-
-../Core/Src/syscalls.c:
-
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/time.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/lock.h:
+
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/_types.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/reent.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/signal.h:
 
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/stat.h:
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/cdefs.h:
+
+../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:
+
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/time.h:
+
+../Core/Src/syscalls.c:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/newlib.h:
-
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_stdint.h:
 
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c:
 
@@ -986,37 +852,31 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_exti.h:
 
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/_endian.h:
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/stat.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/config.h:
 
 ../Core/Src/stm32f0xx_it.c:
 
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/_types.h:
-
-../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:
-
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h:
 
-../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h:
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h:
 
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stddef.h:
-
-../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h:
-
-../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/stdio.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_timeval.h:
+
+../Core/Src/stm32f0xx_hal_msp.c:
 
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c:
 
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c:
 
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/_endian.h:
+
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/_ansi.h:
-
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/times.h:
 
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h:
 
@@ -1024,13 +884,11 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h:
 
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/_newlib_version.h:
-
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h:
 
-../Drivers/CMSIS/Include/cmsis_gcc.h:
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h:
 
-../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h:
+../Drivers/CMSIS/Include/cmsis_gcc.h:
 
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h:
 
@@ -1042,23 +900,33 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/stdlib.h:
 
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/stdint.h:
-
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h:
 
 ../Drivers/CMSIS/Include/core_cm0.h:
-
-../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c:
 
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/timespec.h:
 
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stddef.h:
+
+../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_types.h:
 
 ../Drivers/CMSIS/Include/cmsis_compiler.h:
 
+../Core/Inc/stm32f0xx_it.h:
+
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/times.h:
+
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h:
+
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h:
+
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/_newlib_version.h:
+
+../Core/Inc/stm32f0xx_hal_conf.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_timespec.h:
 
@@ -1066,19 +934,21 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/_default_types.h:
 
-../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:
-
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stdint.h:
+../Core/Inc/main.h:
 
 /opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/machine/ieeefp.h:
 
-../Core/Inc/main.h:
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/lib/gcc/arm-none-eabi/9.3.1/include/stdint.h:
 
 ../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x6.h:
 
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/stdint.h:
+
 ../Drivers/CMSIS/Include/cmsis_version.h:
 
-/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/time.h:
+../Core/Src/main.c:
+
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h:
 
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c:
 
@@ -1087,3 +957,9 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_e
 ../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c:
 
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h:
+
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_intsup.h:
+
+/opt/homebrew/Cellar/gcc-arm-none-eabi/20200630/arm-none-eabi/include/sys/_stdint.h:
+
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:

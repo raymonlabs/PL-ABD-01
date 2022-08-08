@@ -261,12 +261,6 @@
 		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h">
 			<Option target="Mask_SW.elf"/>
 		</Unit>
-		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h">
-			<Option target="Mask_SW.elf"/>
-		</Unit>
-		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h">
-			<Option target="Mask_SW.elf"/>
-		</Unit>
 		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h">
 			<Option target="Mask_SW.elf"/>
 		</Unit>
@@ -295,9 +289,6 @@
 			<Option target="Mask_SW.elf"/>
 		</Unit>
 		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h">
-			<Option target="Mask_SW.elf"/>
-		</Unit>
-		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_usart.h">
 			<Option target="Mask_SW.elf"/>
 		</Unit>
 		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_utils.h">
@@ -349,12 +340,6 @@
 			<Option target="Mask_SW.elf"/>
 		</Unit>
 		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c">
-			<Option target="Mask_SW.elf"/>
-		</Unit>
-		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c">
-			<Option target="Mask_SW.elf"/>
-		</Unit>
-		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c">
 			<Option target="Mask_SW.elf"/>
 		</Unit>
 		<Unit filename="/Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/STM32F030F4PX_FLASH.ld">

@@ -42,10 +42,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj.d"
   "CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj"
   "CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj.d"
-  "CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj"
-  "CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj.d"
-  "CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj"
-  "CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj.d"
   "Mask_SW.elf"
   "Mask_SW.elf.pdb"
 )

@@ -34,6 +34,4 @@ CMakeFiles/Mask_SW.elf.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex
  /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
  /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
  /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
- /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
- /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
- /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+ /Users/jay/Dropbox/Designs/1_PAPER_LLC/About_Design/PL-ABD-01/ABD01_SW/Mask_SW/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
